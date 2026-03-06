@@ -1,5 +1,7 @@
 "use client";
 
+import { EMAIL } from "@/data/constants";
+
 export default function Contact() {
   return (
     <main className="bg-white text-gray-900 min-h-screen flex flex-col">
@@ -132,7 +134,7 @@ export default function Contact() {
       {/* Footer */}
       <footer className="bg-[#4655C7] text-white py-12 px-6 text-center text-sm border-t border-[#3A46B9]">
         <p className="font-semibold mb-2">대기업김과장</p>
-        <p>이메일: allpass_everything@naver.com</p>
+        <p>이메일: {EMAIL}</p>
         <p className="text-xs mt-4 opacity-75">
           COPYRIGHT 2025. 대기업김과장 All rights reserved.
         </p>
