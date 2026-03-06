@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { testimonials } from '@/data/testimonitals';
+import { EMAIL } from '@/data/constants';
 
 export default function Testimonials() {
     const [visibleCount, setVisibleCount] = useState(6);
@@ -130,7 +131,7 @@ export default function Testimonials() {
             {/* Footer */}
             <footer className="bg-[#4655C7] text-white py-12 px-6 text-center text-sm">
                 <p className="font-semibold mb-2">대기업김과장</p>
-                <p>이메일: kks7180@naver.com</p>
+                <p>이메일: {EMAIL}</p>
                 <p className="text-xs mt-4">COPYRIGHT 2025. 대기업김과장 All rights reserved.</p>
             </footer>
         </main>
